@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const pauseBtn = document.getElementById('pause-btn');
   const homeBtn = document.getElementById('home-btn');
 
+  // Make game screen bigger
+  canvas.width = window.innerWidth > 800 ? 800 : window.innerWidth - 40;
+  canvas.height = window.innerHeight > 600 ? 600 : window.innerHeight - 200;
+
   // Mobile control buttons
   const upBtn = document.getElementById('up-btn');
   const downBtn = document.getElementById('down-btn');

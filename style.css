@@ -162,22 +162,61 @@ canvas {
 
 /* Mobile arrow buttons */
 .mobile-btn {
-  font-size: 28px;        /* bigger arrows */
-  padding: 18px 30px;     /* big tap area */
+  font-size: 40px;        /* bigger arrows */
+  padding: 25px 40px;     /* big tap area */
   margin: 5px 10px;
   cursor: pointer;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   font-weight: bold;
   color: white;
   background-color: #4caf50;
   box-shadow: 0 6px 18px rgba(76, 175, 80, 0.8);
   transition: background-color 0.3s ease;
   user-select: none;
-  width: 60px;            /* fixed width for uniformity */
-  height: 60px;           /* fixed height */
+  width: 100px;            /* fixed width for uniformity */
+  height: 100px;           /* fixed height */
 }
 
 .mobile-btn:hover {
   background-color: #388e3c;
+}
+
+/* ==== Mobile responsive styling ==== */
+@media (max-width: 768px) {
+  canvas {
+    width: 95vw;   /* nearly full width */
+    height: 70vh;  /* taller for better gameplay area */
+  }
+
+  /* Larger mobile arrow buttons */
+  .mobile-btn {
+    width: 200px;
+    height: 150px;
+    font-size: 40px;
+    padding: 25px;
+  }
+
+  /* Larger control and toggle buttons */
+  #game-controls button,
+  .toggle-btn {
+    font-size: 24px;
+    padding: 18px 36px;
+  }
+
+  /* Welcome screen padding and max-width adjustment for small screens */
+  #welcome-screen {
+    padding: 30px 40px;
+    max-width: 90vw;
+  }
+
+  /* Adjust welcome text size on mobile */
+  .welcome-text {
+    font-size: 1.4rem;
+  }
+
+  /* Adjust game title size on mobile */
+  .game-title {
+    font-size: 2.5rem;
+  }
 }
