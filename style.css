@@ -1,0 +1,174 @@
+/* Body and general styles */
+body {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Canvas styling */
+canvas {
+  background: #222;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #4caf50;
+  border-radius: 10px;
+   box-shadow: 0 0 15px #4caf50aa;
+}
+
+/* Score and timer styling */
+#score, #timer {
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #a5d6a7;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Welcome screen styling - vertical stacking */
+#welcome-screen {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: center;
+  margin-top: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #4caf50;
+  max-width: 400px;
+  gap: 30px; /* spacing between children */
+}
+
+/* Game title */
+.game-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #81c784;
+  text-shadow: 2px 2px 5px #1b5e20;
+}
+
+/* Welcome text */
+.welcome-text {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #c8e6c9;
+}
+
+/* Snake image on welcome screen */
+.welcome-snake-image {
+  display: block;
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #66bb6a;
+  border: 2px solid #81c784;
+}
+
+/* Start button styling */
+#start-btn {
+  font-size: 22px;
+  padding: 12px 30px;
+  cursor: pointer;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+#start-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Game message and try again button */
+#game-message {
+  margin-top: 20px;
+  color: #ff5252;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #b71c1c;
+}
+
+#try-again-btn {
+  margin-top: 15px;
+  font-size: 20px;
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: #ff5252;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(255, 82, 82, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+#try-again-btn:hover {
+  background-color: #b71c1c;
+}
+
+#game-controls button {
+  font-size: 18px;
+  padding: 8px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: #4caf50;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+#game-controls button:hover {
+  background-color: #388e3c;
+}
+
+#play-music-btn {
+  font-size: 18px;
+  padding: 10px 25px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: #388e3c;
+  box-shadow: 0 5px 15px rgba(56, 142, 60, 0.7);
+  transition: background-color 0.3s ease;
+  display: inline-block; /* initially visible */
+}
+
+#play-music-btn:hover {
+  background-color: #2e7d32;
+}
+
+.toggle-btn {
+  background-color: #4caf50; /* same green as start button */
+  color: white;
+  padding: 12px 30px;       /* same padding as start button */
+  border: none;
+  border-radius: 12px;      /* same border radius */
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.6);
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.toggle-btn:hover {
+  background-color: #388e3c; /* same hover green */
+}
+

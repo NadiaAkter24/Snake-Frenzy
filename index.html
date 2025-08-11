@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Snake Frenzy</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="welcome-screen" class="welcome-screen">
+  <h1 class="game-title">Snake Frenzy</h1>
+  <p class="welcome-text">Welcome to the game! Get ready for a fast-paced snake challenge.</p>
+  
+  <!-- Snake image on welcome screen -->
+  <img src="snake.jpeg" alt="Snake" class="welcome-snake-image" />
+
+  <button id="start-btn" class="start-btn">Start Game</button>
+
+  <!-- Music toggle button -->
+  <button id="music-toggle-btn" class="toggle-btn">Music: On</button>
+</div>
+
+<div id="game-container" style="display:none;">
+  <div id="score">Score: 0</div>
+  <div id="high-score">High Score: 0</div>
+  <div id="timer">Time Left: 60</div>
+  <canvas id="game" width="400" height="400"></canvas>
+
+  <!-- New buttons -->
+  <div id="game-controls">
+    <button id="pause-btn">Pause</button>
+    <button id="home-btn">Home</button>
+    <button id="music-toggle-btn-game" class="toggle-btn">Music: On</button>
+  </div>
+
+  <div id="game-message" style="display:none;">
+    <h2 id="final-message"></h2>
+    <button id="try-again-btn">Try Again</button>
+  </div>
+</div>
+
+<!-- Audio elements for background music and eat sound -->
+<audio id="bg-music" src="sounds/background.wav" loop autoplay></audio>
+<audio id="eat-sound" src="sounds/bite.mp3"></audio>
+<audio id="gameover-sound" src="sounds/gameover.wav" preload="auto"></audio>
+
+<script src="script.js" defer></script>
+<footer style="color: #a5d6a7; margin: 20px 0; font-size: 14px; font-style: italic;">
+  Game made by Nadia
+</footer>
+
+</body>
+</html>
