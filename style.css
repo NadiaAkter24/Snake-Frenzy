@@ -162,8 +162,8 @@ canvas {
 
 /* Mobile arrow buttons */
 .mobile-btn {
-  font-size: 28px;        /* bigger arrows */
-  padding: 18px 30px;     /* big tap area */
+  font-size: 32px;        /* slightly bigger font */
+  padding: 20px 35px;     /* bigger tap area */
   margin: 5px 10px;
   cursor: pointer;
   border: none;
@@ -174,9 +174,10 @@ canvas {
   box-shadow: 0 6px 18px rgba(76, 175, 80, 0.8);
   transition: background-color 0.3s ease;
   user-select: none;
-  width: 60px;            /* fixed width for uniformity */
-  height: 60px;           /* fixed height */
+  width: 70px;            /* wider */
+  height: 70px;           /* taller */
 }
+
 
 .mobile-btn:hover {
   background-color: #388e3c;
@@ -184,9 +185,9 @@ canvas {
 
 @media (max-width: 768px) {
   .mobile-btn {
-    width: 50px;       /* smaller width */
-    height: 50px;      /* smaller height */
+    width: 80px;       /* smaller width */
+    height: 60px;      /* smaller height */
     font-size: 24px;   /* smaller font */
-    padding: 12px;     /* smaller padding */
+    padding: 14px;     /* smaller padding */
   }
 }

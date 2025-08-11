@@ -11,9 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const pauseBtn = document.getElementById('pause-btn');
   const homeBtn = document.getElementById('home-btn');
 
-  // Make game screen bigger
-  //canvas.width = window.innerWidth > 800 ? 800 : window.innerWidth - 40;
- // canvas.height = window.innerHeight > 600 ? 600 : window.innerHeight - 200;
+
 
   // Mobile control buttons
   const upBtn = document.getElementById('up-btn');
@@ -56,8 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
   highScoreDisplay.textContent = 'High Score: ' + highScore;
 
   // Setup canvas size explicitly
-  canvas.width = gridSize * tileCount;
-  canvas.height = gridSize * tileCount;
+  canvas.width = 400;
+  canvas.height = 400;
 
   // Spawn food randomly not on snake
   function spawnFood() {
