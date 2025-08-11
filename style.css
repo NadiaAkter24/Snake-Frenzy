@@ -20,11 +20,11 @@ canvas {
   margin: 20px auto;
   border: 3px solid #4caf50;
   border-radius: 10px;
-   box-shadow: 0 0 15px #4caf50aa;
+  box-shadow: 0 0 15px #4caf50aa;
 }
 
-/* Score and timer styling */
-#score, #timer {
+/* Score, timer, and high score styling */
+#score, #timer, #high-score {
   font-size: 22px;
   margin: 10px 0;
   font-weight: bold;
@@ -117,17 +117,18 @@ canvas {
   background-color: #b71c1c;
 }
 
+/* Game control buttons */
 #game-controls button {
-  font-size: 18px;
-  padding: 8px 20px;
-  margin: 0 10px;
+  font-size: 22px;      /* increased size for kids */
+  padding: 14px 30px;   /* bigger buttons */
+  margin: 0 15px;
   cursor: pointer;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   font-weight: bold;
   color: white;
   background-color: #4caf50;
-  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.7);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.7);
   transition: background-color 0.3s ease;
 }
 
@@ -135,40 +136,48 @@ canvas {
   background-color: #388e3c;
 }
 
-#play-music-btn {
-  font-size: 18px;
-  padding: 10px 25px;
-  margin: 20px auto 0;
-  cursor: pointer;
-  border: none;
-  border-radius: 12px;
-  font-weight: bold;
-  color: white;
-  background-color: #388e3c;
-  box-shadow: 0 5px 15px rgba(56, 142, 60, 0.7);
-  transition: background-color 0.3s ease;
-  display: inline-block; /* initially visible */
-}
-
-#play-music-btn:hover {
-  background-color: #2e7d32;
-}
-
+/* Music toggle buttons */
 .toggle-btn {
   background-color: #4caf50; /* same green as start button */
   color: white;
-  padding: 12px 30px;       /* same padding as start button */
+  padding: 14px 30px;       /* match size with control buttons */
   border: none;
   border-radius: 12px;      /* same border radius */
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   box-shadow: 0 5px 15px rgba(76, 175, 80, 0.6);
   transition: background-color 0.3s ease;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .toggle-btn:hover {
   background-color: #388e3c; /* same hover green */
 }
 
+/* Mobile controls container */
+#mobile-controls {
+  margin-top: 25px;
+}
+
+/* Mobile arrow buttons */
+.mobile-btn {
+  font-size: 28px;        /* bigger arrows */
+  padding: 18px 30px;     /* big tap area */
+  margin: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #4caf50;
+  box-shadow: 0 6px 18px rgba(76, 175, 80, 0.8);
+  transition: background-color 0.3s ease;
+  user-select: none;
+  width: 60px;            /* fixed width for uniformity */
+  height: 60px;           /* fixed height */
+}
+
+.mobile-btn:hover {
+  background-color: #388e3c;
+}

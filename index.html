@@ -24,13 +24,21 @@
   <div id="score">Score: 0</div>
   <div id="high-score">High Score: 0</div>
   <div id="timer">Time Left: 60</div>
-  <canvas id="game" width="400" height="400"></canvas>
+  <canvas id="game"></canvas>
 
   <!-- New buttons -->
   <div id="game-controls">
     <button id="pause-btn">Pause</button>
     <button id="home-btn">Home</button>
     <button id="music-toggle-btn-game" class="toggle-btn">Music: On</button>
+  </div>
+
+  <!-- Mobile controls for touch -->
+  <div id="mobile-controls" style="margin-top:20px;">
+    <button id="up-btn" class="mobile-btn">↑</button><br />
+    <button id="left-btn" class="mobile-btn">←</button>
+    <button id="down-btn" class="mobile-btn">↓</button>
+    <button id="right-btn" class="mobile-btn">→</button>
   </div>
 
   <div id="game-message" style="display:none;">
@@ -45,6 +53,7 @@
 <audio id="gameover-sound" src="sounds/gameover.wav" preload="auto"></audio>
 
 <script src="script.js" defer></script>
+
 <footer style="color: #a5d6a7; margin: 20px 0; font-size: 14px; font-style: italic;">
   Game made by Nadia
 </footer>
